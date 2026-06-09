@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ads Afiliados IA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<section class="hero">
+<h1>Gerador de Anúncios com IA</h1>
+<p>Crie 15 títulos e 4 descrições para Google Ads Rede de Pesquisa.</p>
+</section>
+<section class="card">
+<label>Nome do produto</label>
+<input id="produto" placeholder="Ex: Notebook Gamer">
+<label>Idioma</label>
+<select id="idioma">
+<option value="pt-BR">Português Brasil</option>
+<option value="en-US">Inglês</option>
+<option value="es-ES">Espanhol</option>
+</select>
+<label>Etapa do funil</label>
+<select id="funil">
+<option value="topo">Topo - descoberta</option>
+<option value="meio">Meio - consideração</option>
+<option value="fundo">Fundo - compra</option>
+</select>
+<button id="gerar">Gerar com IA</button>
+<p id="status"></p>
+</section>
+<section class="resultado">
+<div class="resultado-header">
+<h2>Resultado JSON</h2>
+<button id="copiar">Copiar JSON</button>
+</div>
+<pre id="json">{}</pre>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
